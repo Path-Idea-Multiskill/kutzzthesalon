@@ -1,0 +1,15 @@
+
+@import "tailwindcss";
+
+@import "./design-system/tokens.css";
+@import "./design-system/typography.css";
+@import "./design-system/components.css";
+
+@theme {
+    --color-brand: #D60927;
+    --color-brand-dark: #A60820;
+    --color-brand-light: #FFF2F4;
+
+    --font-sans: "Inter", sans-serif;
+    --font-heading: "Poppins", sans-serif;
+}
