@@ -1,4 +1,3 @@
-
 @extends('frontend.layouts.app')
 
 @section('title', 'KUTZ Salon | Premium Beauty & Hair Services')
@@ -17,16 +16,19 @@
 
     @include('frontend.home.sections.gallery')
 
-    @include('frontend.home.sections.instagram')
+    <!-- @include('frontend.home.sections.instagram') -->
+
 
     @include('frontend.home.sections.experience')
+
+    @include('frontend.home.sections.instagram-reels')
 
     @include('frontend.home.sections.testimonials')
 
     @include('frontend.home.sections.blogs')
 
-    @include('frontend.home.sections.academy')
+    <!-- @include('frontend.home.sections.academy') -->
 
-    @include('frontend.home.sections.branches')
+    <!-- @include('frontend.home.sections.branches') -->
 
 @endsection

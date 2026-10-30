@@ -1,16 +1,17 @@
 
-{{-- ================================================
-    KUTZ SALON - PREMIUM SERVICES SLIDER
-    Dynamic Data + Hidden Scrollbar + Responsive UI
-================================================ --}}
+{{-- =====================================================
+    KUTZ SALON — INFINITE SERVICES MARQUEE
+    Laravel Blade + Tailwind CSS + Vanilla JavaScript
+    Desktop / Tablet / Mobile Responsive
+===================================================== --}}
 
 <section
     id="services"
-    class="scroll-mt-24 overflow-hidden bg-white px-4 py-14 sm:px-6 lg:px-8 lg:py-20"
+    class="scroll-mt-24 overflow-hidden bg-white py-14 sm:py-16 lg:py-20"
 >
-    <div class="mx-auto w-full max-w-[1440px]">
+    {{-- SECTION HEADING --}}
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-        {{-- SECTION HEADING --}}
         <div class="mx-auto max-w-3xl text-center">
 
             <p class="text-xs font-bold uppercase tracking-[0.25em] text-brand">
@@ -29,211 +30,195 @@
 
         </div>
 
-        @if($services->isNotEmpty())
+    </div>
 
-            {{-- SLIDER HEADER --}}
-            <div class="mt-10 flex items-center justify-between gap-4">
+    @if($services->isNotEmpty())
 
-                <div>
-                    <h3 class="font-heading text-sm font-bold text-slate-900 sm:text-base">
-                        Explore Our Treatments
-                    </h3>
+        {{-- SLIDER HEADER --}}
+        <!-- <div class="mx-auto mt-10 flex max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
 
-                    <p class="mt-1 text-xs text-slate-500">
-                        {{ $services->count() }} services available
-                    </p>
-                </div>
+            <div>
+                <h3 class="font-heading text-base font-bold text-slate-900">
+                    Explore Our Treatments
+                </h3>
 
-                {{-- SLIDER BUTTONS --}}
-                <div class="flex shrink-0 items-center gap-2">
-
-                    {{-- PREVIOUS --}}
-                    <button
-                        type="button"
-                        id="servicesPrev"
-                        aria-label="Previous services"
-                        aria-controls="servicesTrack"
-                        class="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 transition hover:border-brand hover:text-brand disabled:cursor-not-allowed disabled:opacity-30 sm:h-11 sm:w-11"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                             width="20"
-                             height="20"
-                             viewBox="0 0 24 24"
-                             fill="none"
-                             stroke="currentColor"
-                             stroke-width="2"
-                             stroke-linecap="round"
-                             stroke-linejoin="round">
-                            <path d="m15 18-6-6 6-6"/>
-                        </svg>
-                    </button>
-
-                    {{-- NEXT --}}
-                    <button
-                        type="button"
-                        id="servicesNext"
-                        aria-label="Next services"
-                        aria-controls="servicesTrack"
-                        class="flex h-10 w-10 items-center justify-center rounded-full bg-brand text-white transition hover:bg-brand-dark disabled:cursor-not-allowed disabled:opacity-30 sm:h-11 sm:w-11"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                             width="20"
-                             height="20"
-                             viewBox="0 0 24 24"
-                             fill="none"
-                             stroke="currentColor"
-                             stroke-width="2"
-                             stroke-linecap="round"
-                             stroke-linejoin="round">
-                            <path d="m9 18 6-6-6-6"/>
-                        </svg>
-                    </button>
-
-                </div>
+                <p class="mt-1 text-xs text-slate-500">
+                    {{ $services->count() }} services available
+                </p>
             </div>
 
-            {{-- ====================================
-                SERVICES SLIDER
-                SCROLLBAR COMPLETELY HIDDEN
-            ===================================== --}}
+            <div class="flex items-center gap-2 text-xs font-medium text-slate-500">
+                <span class="relative flex h-2 w-2">
+                    <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-brand opacity-30"></span>
+                    <span class="relative inline-flex h-2 w-2 rounded-full bg-brand"></span>
+                </span>
+
+                <span>Explore our collection</span>
+            </div>
+
+        </div> -->
+
+        {{-- =================================================
+            FULL-WIDTH INFINITE MARQUEE
+            Two identical groups create a seamless loop.
+        ================================================== --}}
+
+        <div
+            id="kutzServicesMarquee"
+            class="kutz-marquee relative mt-6 w-full overflow-hidden"
+            aria-label="Explore KUTZ Salon services"
+        >
+
+            {{-- LEFT EDGE FADE --}}
             <div
-                id="servicesTrack"
-                tabindex="0"
-                aria-label="Salon services slider"
-                class="kutz-services-track mt-6 flex snap-x snap-mandatory gap-4 overflow-x-auto overflow-y-hidden overscroll-x-contain scroll-smooth pb-2 sm:gap-5 lg:gap-6"
+                class="pointer-events-none absolute inset-y-0 left-0 z-20 w-10 bg-gradient-to-r from-white via-white/65 to-transparent sm:w-20 lg:w-32"
+                aria-hidden="true"
+            ></div>
+
+            {{-- RIGHT EDGE FADE --}}
+            <div
+                class="pointer-events-none absolute inset-y-0 right-0 z-20 w-10 bg-gradient-to-l from-white via-white/65 to-transparent sm:w-20 lg:w-32"
+                aria-hidden="true"
+            ></div>
+
+            {{-- ANIMATED TRACK --}}
+            <div
+                class="kutz-marquee-track flex w-max items-stretch"
+                data-marquee-track
             >
 
-                @foreach($services as $service)
+                @for($copy = 0; $copy < 2; $copy++)
 
-                    <a
-                        href="{{ route('services.show', $service->slug) }}"
-                        aria-label="View details of {{ $service->name }}"
-                        class="group flex w-[88%] min-w-0 shrink-0 snap-start flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:border-rose-200 hover:shadow-lg hover:shadow-rose-950/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand sm:w-[calc((100%-1.25rem)/2)] lg:w-[calc((100%-3rem)/3)] xl:w-[calc((100%-4.5rem)/4)]"
+                    <div
+                        class="kutz-marquee-group flex shrink-0 items-stretch"
+                        data-marquee-group
+                        @if($copy === 1)
+                            aria-hidden="true"
+                            inert
+                        @endif
                     >
 
-                        {{-- SERVICE IMAGE --}}
-                        <div class="relative aspect-[16/11] overflow-hidden bg-brand-light">
+                        @foreach($services as $service)
 
-                            @if($service->image)
+                            <a
+                                href="{{ route('services.show', $service->slug) }}"
+                                aria-label="View {{ $service->name }} service details"
+                                @if($copy === 1) tabindex="-1" @endif
+                                class="kutz-service-card group flex shrink-0 flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-[border-color,box-shadow] duration-300 hover:border-rose-200 hover:shadow-xl hover:shadow-rose-950/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+                            >
 
-                                <img
-                                    src="{{ asset('storage/' . ltrim($service->image, '/')) }}"
-                                    alt="{{ $service->name }}"
-                                    loading="lazy"
-                                    class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                                >
+                                {{-- IMAGE --}}
+                                <div class="relative aspect-[16/10] overflow-hidden bg-brand-light">
 
-                            @else
+                                    @if($service->image)
 
-                                <div class="flex h-full items-center justify-center p-5 font-heading text-xl font-bold text-brand">
-                                    KUTZ SALON
+                                        <img
+                                            src="{{ asset('storage/' . ltrim($service->image, '/')) }}"
+                                            alt="{{ $service->name }}"
+                                            loading="lazy"
+                                            decoding="async"
+                                            class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                        >
+
+                                    @else
+
+                                        <div class="flex h-full items-center justify-center p-5 font-heading text-xl font-bold text-brand">
+                                            KUTZ SALON
+                                        </div>
+
+                                    @endif
+
+                                    {{-- FEATURED BADGE --}}
+                                    @if($service->is_featured)
+
+                                        <span class="absolute left-3 top-3 rounded-full bg-brand px-3 py-1.5 text-[10px] font-bold text-white shadow-md">
+                                            Featured
+                                        </span>
+
+                                    @endif
+
+                                    {{-- IMAGE HOVER OVERLAY --}}
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/15 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+
                                 </div>
 
-                            @endif
+                                {{-- CARD CONTENT --}}
+                                <div class="flex flex-1 items-center gap-3 p-4 sm:p-5">
 
-                            {{-- FEATURED BADGE --}}
-                            @if($service->is_featured)
+                                    <div class="min-w-0 flex-1">
 
-                                <span class="absolute left-3 top-3 rounded-full bg-brand px-3 py-1.5 text-[10px] font-bold text-white shadow-md">
-                                    Featured
-                                </span>
+                                        {{-- CATEGORY --}}
+                                        <p class="truncate text-[10px] font-bold uppercase tracking-wider text-brand">
+                                            {{ $service->category?->name ?? 'Salon Service' }}
+                                        </p>
 
-                            @endif
+                                        {{-- TITLE --}}
+                                        <h3 class="mt-2 line-clamp-2 min-h-[44px] font-heading text-base font-bold leading-[22px] text-slate-950 transition-colors duration-300 group-hover:text-brand sm:text-[17px]">
+                                            {{ $service->name }}
+                                        </h3>
 
-                            {{-- IMAGE OVERLAY --}}
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+                                        {{-- ONE-LINE DESCRIPTION --}}
+                                        <p class="mt-2 truncate text-xs leading-5 text-slate-500 sm:text-[13px]">
+                                            {{ $service->short_description }}
+                                        </p>
 
-                            {{-- HOVER ARROW --}}
-                            <span class="absolute bottom-3 right-3 flex h-9 w-9 translate-y-2 items-center justify-center rounded-full bg-white text-brand opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                                    </div>
 
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                     width="18"
-                                     height="18"
-                                     viewBox="0 0 24 24"
-                                     fill="none"
-                                     stroke="currentColor"
-                                     stroke-width="2"
-                                     stroke-linecap="round"
-                                     stroke-linejoin="round">
-                                    <path d="M7 17 17 7"/>
-                                    <path d="M7 7h10v10"/>
-                                </svg>
-
-                            </span>
-
-                        </div>
-
-                        {{-- SERVICE CONTENT --}}
-                        <div class="flex flex-1 flex-col p-4 sm:p-5">
-
-                            {{-- CATEGORY --}}
-                            <p class="line-clamp-1 text-[10px] font-bold uppercase tracking-wider text-brand">
-                                {{ $service->category?->name ?? 'Salon Service' }}
-                            </p>
-
-                            {{-- SERVICE TITLE --}}
-                            <h3 class="mt-2 line-clamp-2 min-h-[48px] font-heading text-base font-bold leading-6 text-slate-950 transition-colors group-hover:text-brand sm:text-lg">
-                                {{ $service->name }}
-                            </h3>
-
-                            {{-- SHORT DESCRIPTION --}}
-                            <p class="mt-2 line-clamp-2 min-h-[44px] text-sm leading-[22px] text-slate-500">
-                                {{ $service->short_description }}
-                            </p>
-
-                            {{-- VIEW DETAILS BUTTON --}}
-                            <div class="mt-auto pt-4">
-
-                                <div class="flex min-h-11 items-center justify-between rounded-xl bg-brand-light px-4 py-3 text-xs font-bold text-brand transition-colors duration-300 group-hover:bg-brand group-hover:text-white sm:text-sm">
-
-                                    <span>
-                                        View Service Details
+                                    {{-- RIGHT ARROW --}}
+                                    <span
+                                        class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-rose-100 bg-brand-light text-brand shadow-sm transition-all duration-300 group-hover:border-brand group-hover:bg-brand group-hover:text-white group-hover:shadow-md"
+                                        aria-hidden="true"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="19"
+                                            height="19"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="transition-transform duration-300 group-hover:translate-x-0.5"
+                                        >
+                                            <path d="M5 12h14" />
+                                            <path d="m12 5 7 7-7 7" />
+                                        </svg>
                                     </span>
 
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                         width="18"
-                                         height="18"
-                                         viewBox="0 0 24 24"
-                                         fill="none"
-                                         stroke="currentColor"
-                                         stroke-width="2"
-                                         stroke-linecap="round"
-                                         stroke-linejoin="round"
-                                         class="shrink-0 transition-transform duration-300 group-hover:translate-x-1">
-                                        <path d="M5 12h14"/>
-                                        <path d="m12 5 7 7-7 7"/>
-                                    </svg>
-
                                 </div>
 
-                            </div>
+                            </a>
 
-                        </div>
+                        @endforeach
 
-                    </a>
+                    </div>
 
-                @endforeach
-
-            </div>
-
-            {{-- VIEW ALL SERVICES --}}
-            <div class="mt-9 text-center">
-
-                <a
-                    href="{{ route('services.index') }}"
-                    class="inline-flex min-h-12 items-center justify-center gap-3 rounded-xl bg-brand px-8 py-3 text-sm font-bold text-white shadow-lg shadow-rose-500/15 transition hover:bg-brand-dark"
-                >
-                    Explore All Services
-
-                    <span aria-hidden="true">→</span>
-                </a>
+                @endfor
 
             </div>
 
-        @else
+        </div>
 
-            {{-- EMPTY STATE --}}
-            <div class="mt-10 rounded-2xl border border-dashed border-rose-200 bg-brand-light p-10 text-center">
+        {{-- VIEW ALL SERVICES --}}
+        <div class="mt-10 px-4 text-center sm:px-6">
+
+            <a
+                href="{{ route('services.index') }}"
+                class="inline-flex min-h-12 items-center justify-center gap-3 rounded-xl bg-brand px-8 py-3 text-sm font-bold text-white shadow-lg shadow-rose-500/15 transition duration-300 hover:-translate-y-0.5 hover:bg-brand-dark hover:shadow-xl"
+            >
+                Explore All Services
+                <span aria-hidden="true">→</span>
+            </a>
+
+        </div>
+
+    @else
+
+        {{-- EMPTY STATE --}}
+        <div class="mx-auto mt-10 max-w-7xl px-4 sm:px-6 lg:px-8">
+
+            <div class="rounded-2xl border border-dashed border-rose-200 bg-brand-light p-10 text-center">
 
                 <h3 class="font-heading text-lg font-bold text-slate-900">
                     Services Coming Soon
@@ -245,104 +230,225 @@
 
             </div>
 
-        @endif
+        </div>
 
-    </div>
+    @endif
+
 </section>
 
-{{-- ================================================
-    SLIDER CSS
-    HIDE HORIZONTAL SCROLLBAR
-================================================ --}}
+
+{{-- =====================================================
+    INFINITE MARQUEE CSS
+===================================================== --}}
+
 <style>
-    .kutz-services-track {
-        scrollbar-width: none !important;
-        -ms-overflow-style: none !important;
+    .kutz-marquee {
+        --kutz-card-width: 330px;
+        --kutz-card-gap: 24px;
+        --kutz-marquee-duration: 40s;
     }
 
-    .kutz-services-track::-webkit-scrollbar {
-        display: none !important;
-        width: 0 !important;
-        height: 0 !important;
+    .kutz-marquee-track {
+        animation: kutzMarqueeMove var(--kutz-marquee-duration) linear infinite;
+        will-change: transform;
     }
 
-    .kutz-services-track::-webkit-scrollbar-thumb {
-        display: none !important;
+    .kutz-marquee-group {
+        gap: var(--kutz-card-gap);
+        padding-right: var(--kutz-card-gap);
+    }
+
+    .kutz-service-card {
+        width: var(--kutz-card-width);
+        min-width: var(--kutz-card-width);
+        max-width: var(--kutz-card-width);
+    }
+
+    /*
+     * Both groups have exactly the same width.
+     * Moving -50% brings the second group into
+     * the exact position of the first group.
+     */
+    @keyframes kutzMarqueeMove {
+        from {
+            transform: translate3d(0, 0, 0);
+        }
+
+        to {
+            transform: translate3d(-50%, 0, 0);
+        }
+    }
+
+    /*
+     * Pause on mouse hover or keyboard focus.
+     * JS additionally handles touch interaction.
+     */
+    .kutz-marquee:hover .kutz-marquee-track,
+    .kutz-marquee:focus-within .kutz-marquee-track,
+    .kutz-marquee.is-paused .kutz-marquee-track {
+        animation-play-state: paused;
+    }
+
+    /*
+     * Tablet
+     */
+    @media (max-width: 1023px) {
+        .kutz-marquee {
+            --kutz-card-width: 290px;
+            --kutz-card-gap: 18px;
+        }
+    }
+
+    /*
+     * Mobile
+     */
+    @media (max-width: 639px) {
+        .kutz-marquee {
+            --kutz-card-width: min(78vw, 290px);
+            --kutz-card-gap: 14px;
+        }
+
+        .kutz-service-card {
+            border-radius: 16px;
+        }
+    }
+
+    /*
+     * Very small phones, including 320px.
+     */
+    @media (max-width: 359px) {
+        .kutz-marquee {
+            --kutz-card-width: 252px;
+            --kutz-card-gap: 12px;
+        }
+    }
+
+    /*
+     * Respect system accessibility settings.
+     */
+    @media (prefers-reduced-motion: reduce) {
+        .kutz-marquee-track {
+            animation: none !important;
+            transform: none !important;
+        }
+
+        .kutz-marquee {
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+
+        .kutz-marquee::-webkit-scrollbar {
+            display: none;
+        }
+
+        .kutz-marquee-group[aria-hidden="true"] {
+            display: none;
+        }
     }
 </style>
 
-{{-- ================================================
-    SLIDER JAVASCRIPT
-    PREVIOUS / NEXT BUTTONS
-================================================ --}}
+
+{{-- =====================================================
+    INFINITE MARQUEE JAVASCRIPT
+    Speed is measured in pixels per second.
+===================================================== --}}
+
 <script>
-document.addEventListener('DOMContentLoaded', function () {
+(function () {
 
-    const track = document.getElementById('servicesTrack');
-    const prev = document.getElementById('servicesPrev');
-    const next = document.getElementById('servicesNext');
+    function initKutzServicesMarquee() {
 
-    if (!track || !prev || !next) {
-        return;
-    }
+        const marquee = document.getElementById('kutzServicesMarquee');
 
-    function getScrollAmount() {
-
-        const card = track.querySelector('a');
-
-        if (!card) {
-            return 320;
+        if (!marquee || marquee.dataset.initialized === 'true') {
+            return;
         }
 
-        const gap = parseFloat(
-            window.getComputedStyle(track).gap
-        ) || 0;
+        const track = marquee.querySelector('[data-marquee-track]');
+        const firstGroup = marquee.querySelector('[data-marquee-group]');
 
-        return card.getBoundingClientRect().width + gap;
+        if (!track || !firstGroup) {
+            return;
+        }
+
+        marquee.dataset.initialized = 'true';
+
+        // Change this value to adjust speed.
+        // 100 means approximately 100 pixels move each second.
+        const speed = 100;
+
+        function updateMarqueeSpeed() {
+
+            const groupWidth = firstGroup.getBoundingClientRect().width;
+
+            if (groupWidth <= 0) {
+                return;
+            }
+
+            const duration = groupWidth / speed;
+
+            marquee.style.setProperty(
+                '--kutz-marquee-duration',
+                duration + 's'
+            );
+        }
+
+        // Pause while the visitor holds a finger on the cards.
+        marquee.addEventListener('touchstart', function () {
+            marquee.classList.add('is-paused');
+        }, { passive: true });
+
+        marquee.addEventListener('touchend', function () {
+            marquee.classList.remove('is-paused');
+        }, { passive: true });
+
+        marquee.addEventListener('touchcancel', function () {
+            marquee.classList.remove('is-paused');
+        }, { passive: true });
+
+        // Recalculate on window resize.
+        let resizeFrame = null;
+
+        window.addEventListener('resize', function () {
+
+            if (resizeFrame !== null) {
+                cancelAnimationFrame(resizeFrame);
+            }
+
+            resizeFrame = requestAnimationFrame(function () {
+                updateMarqueeSpeed();
+                resizeFrame = null;
+            });
+
+        });
+
+        // Keep duration correct if fonts or layout sizes change.
+        if ('ResizeObserver' in window) {
+
+            const observer = new ResizeObserver(function () {
+                updateMarqueeSpeed();
+            });
+
+            observer.observe(firstGroup);
+
+        }
+
+        updateMarqueeSpeed();
+
     }
 
-    function updateButtons() {
+    if (document.readyState === 'loading') {
 
-        const maxScroll = Math.max(
-            0,
-            track.scrollWidth - track.clientWidth
+        document.addEventListener(
+            'DOMContentLoaded',
+            initKutzServicesMarquee
         );
 
-        prev.disabled = track.scrollLeft <= 2;
+    } else {
 
-        next.disabled = track.scrollLeft >= maxScroll - 2;
+        initKutzServicesMarquee();
+
     }
 
-    prev.addEventListener('click', function () {
-
-        track.scrollBy({
-            left: -getScrollAmount(),
-            behavior: 'smooth'
-        });
-
-    });
-
-    next.addEventListener('click', function () {
-
-        track.scrollBy({
-            left: getScrollAmount(),
-            behavior: 'smooth'
-        });
-
-    });
-
-    track.addEventListener(
-        'scroll',
-        updateButtons,
-        { passive: true }
-    );
-
-    window.addEventListener(
-        'resize',
-        updateButtons
-    );
-
-    updateButtons();
-
-});
+})();
 </script>
