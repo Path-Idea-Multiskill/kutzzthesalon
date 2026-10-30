@@ -22,6 +22,7 @@
                 Salon Management
             </p>
         </div>
+        
 
         <!-- Mobile Close -->
         <button type="button" id="closeSidebar" aria-label="Close navigation menu" class="flex h-10 w-10 items-center
@@ -45,7 +46,7 @@
         @php
             $menu = [
                 ['Dashboard', 'admin.dashboard'],
-                ['Pages', 'admin.pages.index'],
+                //['Pages', 'admin.pages.index'],
                 ['Services', 'admin.services.index'],
                 ['Gallery', 'admin.gallery-images.index'],
                 ['Academy', 'admin.academy-courses.index'],
