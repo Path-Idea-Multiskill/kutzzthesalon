@@ -15,7 +15,7 @@
         <!-- <div>
             <h2 class="font-heading text-2xl font-bold
                        text-brand">
-                KUTZ
+                KUTZZ
             </h2>
 
             <p class="text-xs text-slate-500">
@@ -23,7 +23,7 @@
             </p>
         </div> -->
 
-        <img src="{{ asset('assets/images/kutz-logo.png') }}" alt="KUTZ The Salon Logo"
+        <img src="{{ asset('assets/images/kutz-logo.png') }}" alt="KUTZZ The Salon Logo"
             class="block h-auto w-[115px] max-w-full object-contain sm:w-[135px] lg:w-[150px]" loading="eager"
             decoding="async">
 
@@ -136,7 +136,7 @@
         <div class="rounded-xl bg-brand-light p-3">
 
             <p class="text-sm font-semibold text-brand">
-                Kutz Salon
+                Kutzz Salon
             </p>
 
             <p class="text-xs text-slate-500">

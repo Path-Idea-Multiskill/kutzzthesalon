@@ -21,10 +21,25 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        // HOME SECTION: ONLY YOUTUBE VIDEOS
         View::composer('frontend.home.sections.videos', function ($view) {
             $view->with(
                 'videos',
                 Video::query()
+                    ->where('platform', 'youtube')
+                    ->where('is_active', true)
+                    ->orderBy('sort_order')
+                    ->orderByDesc('id')
+                    ->get()
+            );
+        });
+
+        // HOME SECTION: ONLY INSTAGRAM REELS
+        View::composer('frontend.home.sections.instagram-reels', function ($view) {
+            $view->with(
+                'instagramReels',
+                Video::query()
+                    ->where('platform', 'instagram')
                     ->where('is_active', true)
                     ->orderBy('sort_order')
                     ->orderByDesc('id')

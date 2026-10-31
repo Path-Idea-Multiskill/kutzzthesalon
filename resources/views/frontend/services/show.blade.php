@@ -1,9 +1,9 @@
 
 @extends('frontend.layouts.app')
 
-@section('title', ($service->meta_title ?: $service->name . ' | KUTZ Salon'))
+@section('title', ($service->meta_title ?: $service->name . ' | KUTZZ Salon'))
 
-@section('meta_description', $service->meta_description ?: ($service->short_description ?: 'Explore professional beauty and salon services at KUTZ Salon.'))
+@section('meta_description', $service->meta_description ?: ($service->short_description ?: 'Explore professional beauty and salon services at KUTZZ Salon.'))
 
 @section('content')
 
@@ -73,7 +73,7 @@
 
             {{-- SHORT DESCRIPTION --}}
             <p class="mt-6 max-w-lg text-sm leading-8 text-slate-600 sm:text-base">
-                {{ $service->short_description ?: 'Experience personalized salon care and professional styling at KUTZ Salon.' }}
+                {{ $service->short_description ?: 'Experience personalized salon care and professional styling at KUTZZ Salon.' }}
             </p>
 
             {{-- SERVICE DURATION
@@ -130,7 +130,7 @@
                 @else
 
                     <div class="flex h-full items-center justify-center bg-rose-100 font-heading text-3xl font-bold text-brand">
-                        KUTZ SALON
+                        KUTZZ SALON
                     </div>
 
                 @endif
@@ -468,7 +468,7 @@
                         @else
 
                             <div class="flex h-full items-center justify-center font-bold text-brand">
-                                KUTZ Salon
+                                KUTZZ Salon
                             </div>
 
                         @endif
@@ -557,7 +557,7 @@
                 </h2>
 
                 <p class="mt-3 max-w-xl text-sm leading-7 text-rose-100">
-                    Connect with KUTZ Salon and explore a beauty experience tailored to you.
+                    Connect with KUTZZ Salon and explore a beauty experience tailored to you.
                 </p>
 
             </div>

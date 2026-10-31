@@ -1,7 +1,7 @@
 
 @extends('frontend.layouts.app')
 
-@section('title', $blog->meta_title ?: $blog->title.' | KUTZ Salon')
+@section('title', $blog->meta_title ?: $blog->title.' | KUTZZ Salon')
 
 @section('meta_description', $blog->meta_description ?: $blog->excerpt)
 
@@ -25,7 +25,7 @@
                     <span>📅 {{ $blog->published_at->format('d M Y') }}</span>
                 @endif
 
-                <span>✍ {{ $blog->author_name ?: 'KUTZ Salon' }}</span>
+                <span>✍ {{ $blog->author_name ?: 'KUTZZ Salon' }}</span>
             </div>
 
             @if($blog->featured_image)
@@ -83,7 +83,7 @@
                 </div>
 
                 <div class="mt-6 rounded-2xl bg-brand-light p-5">
-                    <h4 class="font-heading text-lg font-bold">Visit KUTZ Salon</h4>
+                    <h4 class="font-heading text-lg font-bold">Visit KUTZZ Salon</h4>
                     <p class="mt-2 text-sm leading-6 text-slate-600">
                         Discover personalized beauty and hair services.
                     </p>

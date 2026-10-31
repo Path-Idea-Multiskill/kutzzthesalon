@@ -7,10 +7,10 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1">
 
-    <title>@yield('title', 'Kutz The Salon')</title>
+    <title>@yield('title', 'Kutzz The Salon')</title>
 
     <meta name="description"
-          content="@yield('meta_description', 'Kutz The Salon - Premium salon services')">
+          content="@yield('meta_description', 'Kutzz The Salon - Premium salon services')">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
           rel="stylesheet">

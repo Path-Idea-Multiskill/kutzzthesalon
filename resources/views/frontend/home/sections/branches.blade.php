@@ -8,7 +8,7 @@
             </p>
 
             <h2 class="mt-3 font-heading text-3xl font-bold sm:text-4xl">
-                Visit KUTZ Salon
+                Visit KUTZZ Salon
             </h2>
 
             <p class="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-400">
@@ -20,14 +20,14 @@
 
             @forelse($branches as $branch)
                 @php
-                    $branchName = $branch->name ?? $branch->branch_name ?? 'KUTZ Salon';
+                    $branchName = $branch->name ?? $branch->branch_name ?? 'KUTZZ Salon';
                     $branchPhone = $branch->phone ?? $branch->phone_number ?? null;
                 @endphp
 
                 <article class="rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:border-rose-400/50 hover:bg-white/10">
 
                     <span class="inline-flex rounded-full bg-brand/20 px-3 py-1 text-xs font-bold text-rose-300">
-                        KUTZ Branch
+                        KUTZZ Branch
                     </span>
 
                     <h3 class="mt-5 font-heading text-xl font-bold">

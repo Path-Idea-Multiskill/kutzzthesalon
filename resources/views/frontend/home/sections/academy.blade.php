@@ -4,11 +4,11 @@
 
         <div class="text-center">
             <p class="text-xs font-bold uppercase tracking-[0.25em] text-brand">
-                Learn With KUTZ
+                Learn With KUTZZ
             </p>
 
             <h2 class="mt-3 font-heading text-3xl font-bold text-slate-950 sm:text-4xl">
-                KUTZ Beauty Academy
+                KUTZZ Beauty Academy
             </h2>
 
             <p class="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-600">
@@ -35,7 +35,7 @@
                             >
                         @else
                             <div class="flex h-full items-center justify-center font-heading text-xl font-bold text-brand">
-                                KUTZ ACADEMY
+                                KUTZZ ACADEMY
                             </div>
                         @endif
                     </div>

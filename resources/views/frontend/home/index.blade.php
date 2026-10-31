@@ -1,8 +1,8 @@
 @extends('frontend.layouts.app')
 
-@section('title', 'KUTZ Salon | Premium Beauty & Hair Services')
+@section('title', 'KUTZZ Salon | Premium Beauty & Hair Services')
 
-@section('meta_description', 'Explore professional hair styling, bridal makeup, skincare, salon services and academy courses at KUTZ Salon.')
+@section('meta_description', 'Explore professional hair styling, bridal makeup, skincare, salon services and academy courses at KUTZZ Salon.')
 
 @section('content')
 

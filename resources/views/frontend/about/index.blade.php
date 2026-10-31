@@ -1,5 +1,5 @@
 {{-- ============================================================
-KUTZ THE SALON — ABOUT US PAGE
+Kutzz THE SALON — ABOUT US PAGE
 Laravel Blade + Tailwind CSS v4
 Responsive: 320px / Mobile / Tablet / Laptop / Desktop
 Theme: #D60927 / #A60820 / #FFF2F4 / White
@@ -7,7 +7,7 @@ Theme: #D60927 / #A60820 / #FFF2F4 / White
 
 @extends('frontend.layouts.app')
 
-@section('title', 'About Us | KUTZ The Salon')
+@section('title', 'About Us | Kutzz The Salon')
 
 @section('content')
 
@@ -23,7 +23,7 @@ Theme: #D60927 / #A60820 / #FFF2F4 / White
             {{-- FULL WIDTH BACKGROUND IMAGE --}}
             <div class="absolute inset-0 -z-20">
 
-                <img src="{{ asset('assets/images/about/about1.png') }}" alt="KUTZ The Salon bridal beauty experience"
+                <img src="{{ asset('assets/images/about/about1.png') }}" alt="Kutzz The Salon bridal beauty experience"
                     class="h-full w-full object-cover object-[67%_center]
                            sm:object-center" fetchpriority="high">
 
@@ -92,7 +92,7 @@ Theme: #D60927 / #A60820 / #FFF2F4 / White
                     <p class="mt-6 max-w-[430px]
                                text-sm leading-7 text-slate-700
                                sm:text-base sm:leading-8">
-                        At KUTZ The Salon, we believe beauty is
+                        At Kutzz The Salon, we believe beauty is
                         not just a look, it's a feeling — and
                         everyone deserves to feel their best,
                         every single day.
@@ -139,7 +139,7 @@ Theme: #D60927 / #A60820 / #FFF2F4 / White
 
         <section class="relative z-10 mx-auto -mt-7
                    w-full max-w-6xl px-4
-                   sm:-mt-9 sm:px-6 lg:px-8" aria-label="KUTZ Salon achievements">
+                   sm:-mt-9 sm:px-6 lg:px-8" aria-label="Kutzz Salon achievements">
 
             <div class="grid grid-cols-2 gap-0
                        overflow-hidden rounded-[22px]
@@ -267,7 +267,7 @@ Theme: #D60927 / #A60820 / #FFF2F4 / White
                            shadow-[0_18px_50px_rgba(0,0,0,0.09)]
                            sm:rounded-[30px]">
 
-                    <img src="{{ asset('assets/images/about/about2.png') }}" alt="KUTZ The Salon interior and reception"
+                    <img src="{{ asset('assets/images/about/about2.png') }}" alt="Kutzz The Salon interior and reception"
                         loading="lazy" decoding="async" class="aspect-[5/4] w-full
                                object-cover
                                sm:aspect-[6/4]
@@ -289,13 +289,13 @@ Theme: #D60927 / #A60820 / #FFF2F4 / White
                                sm:text-4xl lg:text-[42px]">
                         About
                         <span class="text-brand">
-                            Kutz The Salon
+                            Kutzz The Salon
                         </span>
                     </h2>
 
                     <p class="mt-6 text-sm leading-8
                                text-slate-600 sm:text-base">
-                        KUTZ The Salon is dedicated to creating
+                        Kutzz The Salon is dedicated to creating
                         beautiful and memorable experiences through
                         professional hair, beauty, makeup and
                         personal care services.
@@ -379,7 +379,7 @@ Theme: #D60927 / #A60820 / #FFF2F4 / White
                                text-sm leading-7
                                text-slate-600 sm:text-base">
                         Meet the people whose vision, passion
-                        and dedication help shape the KUTZ
+                        and dedication help shape the Kutzz
                         Salon experience.
                     </p>
 
@@ -401,7 +401,7 @@ Theme: #D60927 / #A60820 / #FFF2F4 / White
                            lg:px-12">
 
                     {{-- PORTRAIT --}}
-                    <div class="relative z-10 mx-auto
+                    <!-- <div class="relative z-10 mx-auto
                                h-44 w-44 shrink-0
                                overflow-hidden rounded-full
                                border-[5px] border-white
@@ -413,7 +413,7 @@ Theme: #D60927 / #A60820 / #FFF2F4 / White
                         <img src="{{ asset('assets/images/about/about3.png') }}" alt="Meenakshi Tuteja — Director"
                             loading="lazy" decoding="async" class="h-full w-full object-cover">
 
-                    </div>
+                    </div> -->
 
                     {{-- CONTENT --}}
                     <div class="relative z-10 min-w-0
@@ -423,13 +423,13 @@ Theme: #D60927 / #A60820 / #FFF2F4 / White
                         <h3 class="font-heading text-2xl
                                    font-bold text-[#171717]
                                    sm:text-[28px]">
-                            Meenakshi Tuteja
+                            Kutzz
                         </h3>
 
-                        <p class="mt-1 text-sm font-semibold
+                        <!-- <p class="mt-1 text-sm font-semibold
                                    text-brand">
                             Director
-                        </p>
+                        </p> -->
 
                         <p class="mt-4 text-sm leading-7
                                    text-slate-600 sm:text-base
@@ -440,64 +440,6 @@ Theme: #D60927 / #A60820 / #FFF2F4 / White
                             creativity and client satisfaction,
                             and strive to make every experience
                             welcoming, thoughtful and memorable.
-                        </p>
-
-                    </div>
-
-                    {{-- QUOTE DECORATION --}}
-                    <span class="pointer-events-none absolute
-                               right-6 top-4 font-serif
-                               text-7xl leading-none
-                               text-brand/20" aria-hidden="true">
-                        “
-                    </span>
-
-                </article>
-
-
-                {{-- DIRECTOR CARD 2 --}}
-                <article class="relative mt-6 flex flex-col
-                           items-center gap-6
-                           rounded-[28px]
-                           border border-rose-100
-                           bg-gradient-to-l
-                           from-[#FFE9ED] to-[#FFF4F6]
-                           px-6 pb-8 pt-8
-                           shadow-sm
-                           sm:px-10
-                           md:flex-row-reverse md:gap-9
-                           md:py-9
-                           lg:px-12">
-
-                    {{-- PORTRAIT --}}
-                    <div class="relative z-10 mx-auto
-                               h-44 w-44 shrink-0
-                               overflow-hidden rounded-full
-                               border-[5px] border-white
-                               bg-white shadow-lg
-                               sm:h-48 sm:w-48
-                               md:mx-0
-                               lg:h-52 lg:w-52">
-
-                        <img src="{{ asset('assets/images/about/about4.png') }}" alt="Yash Tuteja — Director" loading="lazy"
-                            decoding="async" class="h-full w-full object-cover">
-
-                    </div>
-
-                    {{-- CONTENT --}}
-                    <div class="relative z-10 min-w-0
-                               flex-1 text-center
-                               md:text-left">
-
-                        <h3 class="font-heading text-2xl
-                                   font-bold text-[#171717]
-                                   sm:text-[28px]">
-                            Yash Tuteja
-                        </h3>
-
-                        <p class="mt-1 text-sm font-semibold
-                                   text-brand">
-                            Director
                         </p>
 
                         <p class="mt-4 text-sm leading-7
@@ -516,13 +458,16 @@ Theme: #D60927 / #A60820 / #FFF2F4 / White
 
                     {{-- QUOTE DECORATION --}}
                     <span class="pointer-events-none absolute
-                               left-6 top-4 font-serif
+                               right-6 top-4 font-serif
                                text-7xl leading-none
                                text-brand/20" aria-hidden="true">
                         “
                     </span>
 
                 </article>
+
+
+               
 
             </div>
 
@@ -624,7 +569,7 @@ Theme: #D60927 / #A60820 / #FFF2F4 / White
         SECTION 6 — WHAT MAKES US DIFFERENT?
         ====================================================== --}}
 
-        <section id="why-kutz" class="relative overflow-hidden
+        <section id="why-Kutz" class="relative overflow-hidden
                    bg-[#FFF7F9] px-4
                    py-16 sm:px-6 sm:py-20
                    lg:px-8 lg:py-24">
@@ -740,7 +685,7 @@ Theme: #D60927 / #A60820 / #FFF2F4 / White
 
         Desktop: Full-width banner with centered overlay text
         Mobile: Responsive image + readable content
-        Theme: KUTZ Salon Red / Pink / White
+        Theme: Kutzz Salon Red / Pink / White
         ========================================================== --}}
 
         <section id="about-beauty-journey" class="relative isolate w-full overflow-hidden
@@ -813,7 +758,7 @@ Theme: #D60927 / #A60820 / #FFF2F4 / White
                            text-slate-700
                            sm:text-sm sm:leading-7">
                         Book a consultation with our experts and
-                        experience the KUTZ difference.
+                        experience the Kutzz difference.
                     </p>
 
                     {{-- CTA BUTTON --}}

@@ -1,11 +1,11 @@
 @extends('frontend.layouts.app')
 
-@section('title', 'Beauty Blog | KUTZ Salon')
+@section('title', 'Beauty Blog | KUTZZ Salon')
 
 @section('content')
 
     {{-- =========================================================
-    KUTZ SALON — BEAUTY BLOG PAGE
+    KUTZZ SALON — BEAUTY BLOG PAGE
 
     Hero:
     Desktop / Laptop / Tablet: blog/b1.png
@@ -36,7 +36,7 @@
 
                 {{-- DESKTOP / LAPTOP / TABLET IMAGE --}}
                 <img src="{{ asset('assets/images/blog/b1.png') }}"
-                    alt="KUTZ Salon beauty blog, hairstyling and makeup inspiration" fetchpriority="high" decoding="async"
+                    alt="KUTZZ Salon beauty blog, hairstyling and makeup inspiration" fetchpriority="high" decoding="async"
                     class="block h-full w-full object-cover object-center">
 
             </picture>

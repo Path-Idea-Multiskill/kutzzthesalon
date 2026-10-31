@@ -1,8 +1,8 @@
 @extends('frontend.layouts.app')
 
-@section('title', 'Our Services | KUTZ Salon')
+@section('title', 'Our Services | KUTZZ Salon')
 
-@section('meta_description', 'Explore hair, beauty, makeup and salon services at KUTZ Salon.')
+@section('meta_description', 'Explore hair, beauty, makeup and salon services at  KUTZZ Salon.')
 
 @section('content')
 
@@ -74,7 +74,7 @@
 
                 {{-- DESKTOP / LAPTOP / TABLET IMAGE --}}
                 <img src="{{ asset('assets/images/services/ser1.png') }}"
-                    alt="KUTZ Salon professional hair, beauty and styling services" fetchpriority="high" decoding="async"
+                    alt="KUTZZ Salon professional hair, beauty and styling services" fetchpriority="high" decoding="async"
                     class="block h-full w-full object-cover object-center">
 
             </picture>
@@ -203,7 +203,7 @@
                                md:mx-0">
                     Discover professional salon treatments,
                     beauty services and personalized styling
-                    experiences at KUTZ Salon.
+                    experiences at KUTZZ Salon.
                 </p>
 
                 {{-- NO HERO BUTTON --}}
@@ -234,7 +234,7 @@
                                     loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
                             @else
                                 <div class="flex h-full items-center justify-center font-bold text-brand">
-                                    KUTZ SALON
+                                    KUTZZ SALON
                                 </div>
                             @endif
 

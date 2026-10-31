@@ -1,7 +1,7 @@
 
 @extends('frontend.layouts.app')
 
-@section('title', 'Beauty Gallery | KUTZ Salon')
+@section('title', 'Beauty Gallery | KUTZZ Salon')
 
 @section('content')
 

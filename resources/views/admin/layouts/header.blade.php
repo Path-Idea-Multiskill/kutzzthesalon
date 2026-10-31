@@ -40,7 +40,7 @@
                 </h1>
 
                 <p class="hidden text-xs text-slate-500 sm:block">
-                    Kutz Salon Management
+                    Kutzz Salon Management
                 </p>
 
             </div>
@@ -106,8 +106,8 @@
             {{-- MOBILE & TABLET: COMPANY LOGO --}}
             <a href="{{ route('admin.dashboard') }}" class="flex h-11 w-[100px] shrink-0 items-center
                justify-end overflow-hidden
-               sm:w-[125px] lg:hidden" aria-label="KUTZ Salon Admin Dashboard">
-                <img src="{{ asset('assets/images/kutz-logo.png') }}" alt="KUTZ The Salon Logo"
+               sm:w-[125px] lg:hidden" aria-label="KUTZZ Salon Admin Dashboard">
+                <img src="{{ asset('assets/images/kutz-logo.png') }}" alt="KUTZZ The Salon Logo"
                     class="block max-h-11 w-full object-contain object-right" loading="eager" decoding="async">
             </a>
 

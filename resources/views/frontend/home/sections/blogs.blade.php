@@ -12,7 +12,7 @@
             </h2>
 
             <p class="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-600">
-                Discover beauty trends, expert tips and professional advice from KUTZ Salon.
+                Discover beauty trends, expert tips and professional advice from KUTZZ Salon.
             </p>
         </div>
 
@@ -36,7 +36,7 @@
                             >
                         @else
                             <div class="flex h-full items-center justify-center font-heading text-xl font-bold text-brand">
-                                KUTZ BEAUTY BLOG
+                                KUTZZ BEAUTY BLOG
                             </div>
                         @endif
                     </div>

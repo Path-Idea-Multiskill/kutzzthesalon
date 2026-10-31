@@ -132,7 +132,7 @@
                        sm:text-xs
                        md:mb-5 md:tracking-[0.28em]"
             >
-                WELCOME TO KUTZ THE SALON
+                WELCOME TO KUTZZ THE SALON
             </p>
 
 

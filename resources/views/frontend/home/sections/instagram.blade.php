@@ -20,18 +20,18 @@
                     @if($photo)
                         <img
                             src="{{ asset('storage/' . ltrim($photo, '/')) }}"
-                            alt="{{ $image->title ?? 'KUTZ Salon Beauty Work' }}"
+                            alt="{{ $image->title ?? 'KUTZZ Salon Beauty Work' }}"
                             loading="lazy"
                             class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                         >
                     @else
                         <div class="flex h-full items-center justify-center text-brand">
-                            KUTZ Salon
+                            KUTZZ Salon
                         </div>
                     @endif
 
                     <span class="absolute right-3 top-3 rounded-lg bg-white/90 px-2 py-1 text-xs font-bold text-brand">
-                        KUTZ
+                        KUTZZ
                     </span>
                 </div>
             @empty

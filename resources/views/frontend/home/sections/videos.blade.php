@@ -42,7 +42,7 @@
 
             <p class="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
                 Explore beautiful moments, stunning transformations
-                and creative styling from KUTZ Salon.
+                and creative styling from KUTZZ Salon.
             </p>
 
         </div>
@@ -177,7 +177,7 @@
         {{-- VIDEO CAROUSEL --}}
         <div id="kutzVideoTrack"
             class="kutz-video-track mt-5 flex snap-x snap-mandatory gap-3 overflow-x-auto overscroll-x-contain px-4 pb-5 sm:gap-4 sm:px-6 lg:gap-5 lg:px-8"
-            aria-label="KUTZ Salon video carousel" tabindex="0">
+            aria-label="KUTZZ Salon video carousel" tabindex="0">
 
             @forelse(($videos ?? collect()) as $index => $video)
 
@@ -223,7 +223,7 @@
                         <div class="absolute inset-x-0 bottom-0 p-3 sm:p-4">
 
                             <p class="mb-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-rose-200">
-                                KUTZ THE SALON
+                                KUTZZ THE SALON
                             </p>
 
                             <h3 class="line-clamp-2 font-heading text-sm font-bold leading-5 text-white sm:text-base">

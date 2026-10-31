@@ -1,12 +1,12 @@
 
 @extends('frontend.layouts.app')
 
-@section('title', 'KUTZ Beauty Academy | Professional Courses')
+@section('title', 'KUTZZ Beauty Academy | Professional Courses')
 
 @section('content')
 
 {{-- =========================================================
-    KUTZ SALON — BEAUTY ACADEMY
+    KUTZZ SALON — BEAUTY ACADEMY
     Desktop / Tablet Hero: ad1.png
     Mobile Hero: ad2.png
 
@@ -116,7 +116,7 @@
                                uppercase tracking-[0.24em]
                                text-brand sm:text-xs"
                     >
-                        KUTZ BEAUTY ACADEMY
+                        KUTZZ BEAUTY ACADEMY
                     </p>
 
                     <span class="h-px w-8 bg-brand"></span>
@@ -319,7 +319,7 @@
                                            md:h-[380px]
                                            lg:h-[400px]"
                                 >
-                                    KUTZ ACADEMY
+                                    KUTZZ ACADEMY
                                 </div>
 
                             @endif

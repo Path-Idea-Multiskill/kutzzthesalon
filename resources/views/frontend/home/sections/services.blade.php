@@ -20,7 +20,7 @@
 
             <h2 class="mt-4 font-heading text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl lg:text-[42px]">
                 Beauty Services by
-                <span class="text-brand">KUTZ Salon</span>
+                <span class="text-brand">KUTZZ Salon</span>
             </h2>
 
             <p class="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
@@ -66,7 +66,7 @@
         <div
             id="kutzServicesMarquee"
             class="kutz-marquee relative mt-6 w-full overflow-hidden"
-            aria-label="Explore KUTZ Salon services"
+            aria-label="Explore KUTZZ Salon services"
         >
 
             {{-- LEFT EDGE FADE --}}
@@ -123,7 +123,7 @@
                                     @else
 
                                         <div class="flex h-full items-center justify-center p-5 font-heading text-xl font-bold text-brand">
-                                            KUTZ SALON
+                                            KUTZZ SALON
                                         </div>
 
                                     @endif

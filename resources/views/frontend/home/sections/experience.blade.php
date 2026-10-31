@@ -18,7 +18,7 @@ Responsive: Mobile / Tablet / Laptop / Desktop
         <p class="text-[11px] font-bold uppercase
                    tracking-[0.28em] text-brand
                    sm:text-xs">
-            WELCOME TO KUTZ SALON
+            WELCOME TO KUTZZ SALON
         </p>
 
         <h2 class="mt-3 font-heading
@@ -34,7 +34,7 @@ Responsive: Mobile / Tablet / Laptop / Desktop
         <p class="mx-auto mt-6 max-w-4xl
                    text-sm leading-7 text-slate-600
                    sm:text-base sm:leading-8">
-            At KUTZ Salon, beauty is more than a service —
+            At KUTZZ Salon, beauty is more than a service —
             it's an experience. We bring together professional
             hair styling, beauty treatments, bridal artistry
             and personalized care to help every client look
@@ -57,7 +57,7 @@ Responsive: Mobile / Tablet / Laptop / Desktop
                    lg:h-[560px]
                    xl:h-[650px]">
 
-            <img src="{{ asset('assets/images/ex1.png') }}" alt="KUTZ Salon premium bridal beauty experience"
+            <img src="{{ asset('assets/images/ex1.png') }}" alt="KUTZZ Salon premium bridal beauty experience"
                 loading="lazy" decoding="async" class="absolute inset-0 h-full w-full
                        object-cover object-center">
 
@@ -86,7 +86,7 @@ Responsive: Mobile / Tablet / Laptop / Desktop
             <p class="text-[11px] font-bold
                        uppercase tracking-[0.25em]
                        text-brand sm:text-xs">
-                KUTZ SALON & ACADEMY
+                KUTZZ SALON & ACADEMY
             </p>
 
             <!-- <h2
@@ -119,7 +119,7 @@ Responsive: Mobile / Tablet / Laptop / Desktop
                 <p class="font-heading text-3xl
                            font-extrabold tracking-tight
                            text-slate-950 sm:text-4xl">
-                    KUTZ
+                    KUTZZ
                     <span class="text-brand">SALON</span>
                 </p>
 
@@ -142,7 +142,7 @@ Responsive: Mobile / Tablet / Laptop / Desktop
                 <p>
                     If you are passionate about beauty, hair styling,
                     makeup and helping people feel confident,
-                    KUTZ Salon & Academy offers an opportunity
+                    KUTZZ Salon & Academy offers an opportunity
                     to explore the creative world of professional
                     beauty and personal care.
                 </p>

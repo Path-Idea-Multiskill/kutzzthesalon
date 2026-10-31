@@ -23,7 +23,7 @@
     ];
 @endphp
 
-<section aria-label="Why choose KUTZ Salon" class="relative z-10 hidden bg-white px-4 py-8
+<section aria-label="Why choose KUTZZ Salon" class="relative z-10 hidden bg-white px-4 py-8
     md:block md:px-6 md:py-10
     lg:px-8 lg:py-12">
     <div class="mx-auto w-full max-w-7xl">

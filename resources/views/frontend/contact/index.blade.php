@@ -38,7 +38,7 @@
                 <source media="(max-width: 767px)" srcset="{{ asset('assets/images/location/loc2.png') }}">
 
                 {{-- DESKTOP / LAPTOP / TABLET IMAGE --}}
-                <img src="{{ asset('assets/images/location/loc1.png') }}" alt="KUTZ Salon contact and beauty experience"
+                <img src="{{ asset('assets/images/location/loc1.png') }}" alt="KUTZZ Salon contact and beauty experience"
                     fetchpriority="high" decoding="async" class="block h-full w-full object-cover object-center">
 
             </picture>
@@ -167,7 +167,7 @@
                 {{-- CONTACT FORM --}}
                 <div class="rounded-[1.5rem] border border-rose-100 bg-white p-6 shadow-sm sm:p-9">
                     <p class="text-xs font-bold uppercase tracking-widest text-brand">
-                        CONTACT KUTZ SALON
+                        CONTACT KUTZZ SALON
                     </p>
 
                     <h2 class="mt-3 font-heading text-3xl font-bold">
@@ -386,7 +386,7 @@
                            sm:h-[400px]
                            lg:h-[460px]">
 
-                    <iframe title="Google Maps — KUTZ Salon Durg Branch"
+                    <iframe title="Google Maps — KUTZZ Salon Durg Branch"
                         src="https://www.google.com/maps?q=1st%20Floor%2C%20Shanti%20Fitness%20Building%2C%20Station%20Road%2C%20New%20Deepak%20Nagar%2C%20Durg%2C%20Chhattisgarh%20491001&output=embed"
                         width="100%" height="100%" style="border:0;" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade" allowfullscreen
@@ -416,7 +416,7 @@
 
                     {{-- BRANCH NAME --}}
                     <h3 class="mt-6 font-heading text-2xl font-bold text-slate-950">
-                        KUTZ Salon — Durg
+                        KUTZZ Salon — Durg
                     </h3>
 
                     <p class="mt-2 text-xs font-bold uppercase tracking-widest text-brand">
