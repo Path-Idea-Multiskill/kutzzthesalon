@@ -1,6 +1,11 @@
-<header class="sticky top-0 z-30
+<!-- <header class="sticky top-0 z-30
                border-b border-slate-200
-               bg-white/90 backdrop-blur-xl">
+               bg-white/90 backdrop-blur-xl"> -->
+
+<header class="sticky top-0 z-30
+               border-b border-white/10
+               bg-black
+               shadow-[0_4px_20px_rgba(0,0,0,0.18)]">
 
     <div class="flex min-h-16 items-center
                 justify-between gap-2
@@ -32,7 +37,7 @@
             <!-- Header Title: Hidden on Mobile, Visible on Tablet & Desktop -->
             <div class="hidden min-w-0 sm:block">
 
-                <h1 class="truncate font-heading
+                <!-- <h1 class="truncate font-heading
                text-sm font-semibold
                text-slate-900
                sm:text-lg">
@@ -40,6 +45,16 @@
                 </h1>
 
                 <p class="hidden text-xs text-slate-500 sm:block">
+                    Kutzz Salon Management
+                </p> -->
+
+                <h1 class="truncate font-heading
+           text-sm font-semibold
+           text-white sm:text-lg">
+                    Admin Dashboard
+                </h1>
+
+                <p class="hidden text-xs text-gray-400 sm:block">
                     Kutzz Salon Management
                 </p>
 
