@@ -426,7 +426,7 @@ Theme: #D60927 / #A60820 / #FFF2F4 / White
                             Kutzz
                         </h3>
 
-                        <!-- <p class="mt-1 text-sm font-semibold
+                        <!-- <p class="mt-1 text-sm font-semiboldsddssdsddfsdsf      
                                    text-brand">
                             Director
                         </p> -->

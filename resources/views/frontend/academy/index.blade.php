@@ -43,7 +43,7 @@
                 {{-- TABLET / LAPTOP / DESKTOP --}}
                 <img
                     src="{{ asset('assets/images/acadmy/ad1.png') }}"
-                    alt="KUTZ Beauty Academy professional beauty and makeup training"
+                    alt="KUTZZ Beauty Academy professional beauty and makeup training"
                     fetchpriority="high"
                     decoding="async"
                     class="h-full w-full object-cover object-center"
