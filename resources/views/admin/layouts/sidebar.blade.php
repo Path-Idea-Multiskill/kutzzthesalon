@@ -12,7 +12,7 @@
     <div class="flex items-center justify-between
                 border-b border-slate-100 px-5 py-5">
 
-        <div>
+        <!-- <div>
             <h2 class="font-heading text-2xl font-bold
                        text-brand">
                 KUTZ
@@ -21,8 +21,12 @@
             <p class="text-xs text-slate-500">
                 Salon Management
             </p>
-        </div>
-        
+        </div> -->
+
+        <img src="{{ asset('assets/images/kutz-logo.png') }}" alt="KUTZ The Salon Logo"
+            class="block h-auto w-[115px] max-w-full object-contain sm:w-[135px] lg:w-[150px]" loading="eager"
+            decoding="async">
+
 
         <!-- Mobile Close -->
         <button type="button" id="closeSidebar" aria-label="Close navigation menu" class="flex h-10 w-10 items-center
@@ -62,10 +66,10 @@
 
             @if($routeName)
                 <a href="{{ route($routeName) }}" class="flex min-h-11 items-center
-                                                  rounded-xl px-4 py-3
-                                                  text-sm font-medium
-                                                  transition-colors
-                                                  {{ request()->routeIs($routeName)
+                                                                                                          rounded-xl px-4 py-3
+                                                                                                          text-sm font-medium
+                                                                                                          transition-colors
+                                                                                                          {{ request()->routeIs($routeName)
                     ? 'bg-brand text-white shadow-sm'
                     : 'text-slate-600 hover:bg-brand-light hover:text-brand' }}">
 
@@ -73,9 +77,10 @@
 
                 </a>
             @else
-                <span class="flex min-h-11 items-center
-                                                     rounded-xl px-4 py-3
-                                                     text-sm text-slate-400">
+                <span
+                    class="flex min-h-11 items-center
+                                                                                                             rounded-xl px-4 py-3
+                                                                                                             text-sm text-slate-400">
 
                     {{ $label }}
 
@@ -87,7 +92,7 @@
     </nav>
 
     <!-- Sidebar Footer -->
-    <div class="border-t border-slate-100 p-4">
+    <!-- <div class="border-t border-slate-100 p-4">
         <div class="rounded-xl bg-brand-light p-3">
             <p class="text-sm font-semibold text-brand">
                 Kutz Salon
@@ -96,6 +101,50 @@
                 Admin Management Panel
             </p>
         </div>
+    </div> -->
+
+
+    <!-- SIDEBAR FOOTER -->
+    <div class="mt-auto shrink-0 border-t border-slate-100 p-4">
+
+        {{-- MOBILE & TABLET ONLY: LOGOUT --}}
+        <form method="POST" action="{{ route('admin.logout') }}" class="mb-3 lg:hidden">
+            @csrf
+
+            <button type="submit" class="flex min-h-12 w-full items-center
+                   justify-center gap-3
+                   rounded-xl border border-red-200
+                   bg-red-50 px-4 py-3
+                   text-sm font-bold text-brand
+                   transition-colors duration-200
+                   hover:bg-red-100
+                   active:bg-red-200" aria-label="Logout from admin panel">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                    <polyline points="16 17 21 12 16 7" />
+                    <line x1="21" y1="12" x2="9" y2="12" />
+                </svg>
+
+                <span>Logout</span>
+            </button>
+        </form>
+
+        {{-- EXISTING SIDEBAR FOOTER --}}
+        <div class="rounded-xl bg-brand-light p-3">
+
+            <p class="text-sm font-semibold text-brand">
+                Kutz Salon
+            </p>
+
+            <p class="text-xs text-slate-500">
+                Admin Management Panel
+            </p>
+
+        </div>
+
     </div>
+
 
 </aside>
