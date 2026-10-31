@@ -1,7 +1,7 @@
 
 @extends('admin.layouts.app')
 
-@section('title', 'Enquiries | Kutz Salon')
+@section('title', 'Enquiries | Kutzz Salon')
 
 @section('content')
 @php

@@ -1,7 +1,7 @@
 
 @extends('admin.layouts.app')
 
-@section('title', 'Edit Blog | Kutz Salon')
+@section('title', 'Edit Blog | Kutzz Salon')
 
 @section('content')
 <div class="mx-auto w-full max-w-5xl min-w-0 space-y-6 pb-8">

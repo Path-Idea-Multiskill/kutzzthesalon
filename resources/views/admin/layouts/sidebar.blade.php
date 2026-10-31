@@ -53,6 +53,7 @@
                 //['Pages', 'admin.pages.index'],
                 ['Services', 'admin.services.index'],
                 ['Gallery', 'admin.gallery-images.index'],
+                ['Videos', 'admin.videos.index'],
                 ['Academy', 'admin.academy-courses.index'],
                 ['Blogs', 'admin.blogs.index'],
                 ['Appointments', 'admin.appointments.index'],

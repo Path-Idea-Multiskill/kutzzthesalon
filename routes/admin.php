@@ -15,6 +15,7 @@ use App\Http\Controllers\Admin\EnquiryController;
 use App\Http\Controllers\Admin\BranchController;
 use App\Http\Controllers\Admin\PageController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\VideoController;
 
 Route::middleware('guest')->group(function () {
 
@@ -67,6 +68,9 @@ Route::middleware(['auth', 'admin'])->group(function () {
     )->except(['show']);
 
     Route::resource('blogs', BlogController::class)->except(['show']);
+
+    Route::resource('videos', VideoController::class)
+        ->except(['show']);
 
     Route::resource('blog-categories', BlogCategoryController::class)
         ->only(['index', 'store', 'update', 'destroy']);

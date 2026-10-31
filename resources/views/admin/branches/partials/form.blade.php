@@ -22,7 +22,7 @@
         </label>
         <input id="name" name="name" required maxlength="255"
                value="{{ old('name', $branch?->name) }}"
-               placeholder="Kutz Salon - Main Branch"
+               placeholder="Kutzz Salon - Main Branch"
                class="{{ $input }}">
     </div>
 

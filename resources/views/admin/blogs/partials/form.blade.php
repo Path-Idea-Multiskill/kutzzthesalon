@@ -30,7 +30,7 @@
         <label for="author_name" class="mb-2 block text-sm font-semibold">Author Name</label>
         <input id="author_name" name="author_name" maxlength="255"
                value="{{ old('author_name', $blog?->author_name) }}"
-               placeholder="Kutz Salon Team" class="{{ $input }}">
+               placeholder="Kutzz Salon Team" class="{{ $input }}">
     </div>
 
     <div class="md:col-span-2">

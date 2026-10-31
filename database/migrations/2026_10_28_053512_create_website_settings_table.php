@@ -12,7 +12,7 @@ return new class extends Migration
         Schema::create('website_settings', function (Blueprint $table) {
             $table->id();
 
-            $table->string('site_name')->default('Kutz The Salon');
+            $table->string('site_name')->default('Kutzz The Salon');
             $table->string('site_tagline')->nullable();
 
             $table->string('email')->nullable();

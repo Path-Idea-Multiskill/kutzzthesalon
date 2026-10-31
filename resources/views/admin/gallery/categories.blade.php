@@ -1,7 +1,7 @@
 
 @extends('admin.layouts.app')
 
-@section('title', 'Gallery Categories | Kutz Salon')
+@section('title', 'Gallery Categories | Kutzz Salon')
 
 @section('content')
 <div class="mx-auto w-full max-w-6xl min-w-0 space-y-6 pb-8">

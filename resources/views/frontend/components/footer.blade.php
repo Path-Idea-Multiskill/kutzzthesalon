@@ -68,7 +68,7 @@
             <div class="min-w-0 lg:col-span-3">
 
                 {{-- BRAND NAME --}}
-                <a
+                <!-- <a
                     href="{{ \Illuminate\Support\Facades\Route::has('home') ? route('home') : url('/') }}"
                     class="inline-flex flex-col"
                     aria-label="KUTZ Salon Home"
@@ -80,7 +80,34 @@
                     <span class="mt-2 text-[10px] font-semibold uppercase tracking-[0.28em] text-brand">
                         THE SALON & ACADEMY
                     </span>
-                </a>
+                </a> -->
+
+                
+{{-- =====================================================
+    KUTZ SALON — FOOTER COMPANY LOGO
+    Responsive: Mobile / Tablet / Laptop / Desktop
+===================================================== --}}
+
+<a
+    href="{{ \Illuminate\Support\Facades\Route::has('home') ? route('home') : url('/') }}"
+    class="inline-flex max-w-full items-center"
+    aria-label="KUTZ Salon Home"
+>
+    <img
+        src="{{ asset('assets/images/kutz-logo.png') }}"
+        alt="KUTZ The Salon — Hair Beauty Makeup & Academy"
+        loading="lazy"
+        decoding="async"
+        class="block h-auto w-[145px] max-w-full
+               object-contain
+               min-[375px]:w-[160px]
+               sm:w-[175px]
+               md:w-[185px]
+               lg:w-[190px]
+               xl:w-[200px]"
+    >
+</a>
+
 
                 {{-- BRAND DESCRIPTION --}}
                 <p class="mt-6 max-w-sm text-sm leading-8 text-slate-600">

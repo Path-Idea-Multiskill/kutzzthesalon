@@ -13,7 +13,7 @@ class WebsiteSettingController extends Controller
     {
         $settings = WebsiteSetting::firstOrCreate(
             ['id' => 1],
-            ['site_name' => 'Kutz The Salon']
+            ['site_name' => 'Kutzz The Salon']
         );
 
         return view('admin.settings.index', compact('settings'));
@@ -46,7 +46,7 @@ class WebsiteSettingController extends Controller
 
         $settings = WebsiteSetting::firstOrCreate(
             ['id' => 1],
-            ['site_name' => 'Kutz The Salon']
+            ['site_name' => 'Kutzz The Salon']
         );
 
         $settings->update($validated);

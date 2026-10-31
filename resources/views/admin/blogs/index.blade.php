@@ -1,7 +1,7 @@
 
 @extends('admin.layouts.app')
 
-@section('title', 'Blogs Management | Kutz Salon')
+@section('title', 'Blogs Management | Kutzz Salon')
 
 @section('content')
 @php
@@ -161,7 +161,7 @@
 
                         <div class="min-w-0">
                             <p class="truncate font-semibold text-slate-700">
-                                {{ $blog->author_name ?: 'Kutz Salon Team' }}
+                                {{ $blog->author_name ?: 'Kutzz Salon Team' }}
                             </p>
                             <p class="mt-0.5 text-[11px] text-slate-400">
                                 {{ ($blog->published_at ?? $blog->created_at)->format('d M Y') }}

@@ -1,6 +1,6 @@
 @extends('admin.layouts.app')
 
-@section('title', 'Dashboard | Kutz Salon')
+@section('title', 'Dashboard | Kutzz Salon')
 
 @section('content')
 

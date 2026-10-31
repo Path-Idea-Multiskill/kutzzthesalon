@@ -6,7 +6,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1">
 
-    <title>Admin Login | Kutz Salon</title>
+    <title>Admin Login | Kutzz Salon</title>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <x-global-theme />
@@ -22,7 +22,7 @@
 
         <div class="mb-8 text-center">
             <h1 class="text-3xl font-bold text-brand">
-                KUTZ
+                Kutzz
             </h1>
 
             <p class="mt-2 text-sm text-slate-500">
