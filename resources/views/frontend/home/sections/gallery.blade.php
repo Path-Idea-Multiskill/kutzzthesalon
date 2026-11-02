@@ -44,7 +44,7 @@
 
             <p class="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
                 Discover beautiful transformations, creative styling
-                and unforgettable beauty moments at KUTZ The Salon.
+                and unforgettable beauty moments at KUTZZ The Salon.
             </p>
 
         </div>
