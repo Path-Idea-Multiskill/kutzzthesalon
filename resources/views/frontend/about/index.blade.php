@@ -267,7 +267,7 @@ Theme: #D60927 / #A60820 / #FFF2F4 / White
                            shadow-[0_18px_50px_rgba(0,0,0,0.09)]
                            sm:rounded-[30px]">
 
-                    <img src="{{ asset('assets/images/about/about2.png') }}" alt="Kutzz The Salon interior and reception"
+                    <img src="{{ asset('assets/images/about/secondImg.png') }}" alt="Kutzz The Salon interior and reception"
                         loading="lazy" decoding="async" class="aspect-[5/4] w-full
                                object-cover
                                sm:aspect-[6/4]
