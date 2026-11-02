@@ -1,22 +1,22 @@
 @php
     $galleryItems = [
         [
-            'image' => 'x5.png',
+            'image' => 'gal3.png',
             'title' => 'Signature Bridal Look',
             'category' => 'Bridal Beauty',
         ],
         [
-            'image' => 'x6.png',
+            'image' => 'gal4.png',
             'title' => 'Tanya Sharma - Celebrity Glamour & Beauty',
             'category' => 'Actress Styling',
         ],
         [
-            'image' => 'x9.png',
+            'image' => 'gal5.png',
             'title' => 'Sana Khan - Celebrity Glam Look',
             'category' => 'Model & Actress Styling',
         ],
         [
-            'image' => 'x10.png',
+            'image' => 'gal6.png',
             'title' => 'Shilpa Shinde - Celebrity Makeup Glam',
             'category' => 'Celebrity Makeup & Styling',
         ],
