@@ -5,13 +5,13 @@
 @section('content')
 
     <!-- <x-frontend.page-hero
-                eyebrow="GET IN TOUCH"
-                title="Looking to Get Beautified?"
-                description="Have a question about salon services, academy courses or appointments? Our team would love to hear from you."
-                :image="$branches->first()?->image ? asset('storage/'.$branches->first()->image) : null"
-                cta="Send a Message"
-                href="#contact-form"
-            /> -->
+                                            eyebrow="GET IN TOUCH"
+                                            title="Looking to Get Beautified?"
+                                            description="Have a question about salon services, academy courses or appointments? Our team would love to hear from you."
+                                            :image="$branches->first()?->image ? asset('storage/'.$branches->first()->image) : null"
+                                            cta="Send a Message"
+                                            href="#contact-form"
+                                        /> -->
 
 
     {{-- =========================================================
@@ -48,57 +48,57 @@
 
         {{-- DESKTOP LEFT GRADIENT --}}
         <div class="pointer-events-none absolute inset-0 -z-10
-                           hidden bg-gradient-to-r
-                           from-[#FFF2F4]/90
-                           via-[#FFF2F4]/55
-                           to-transparent
-                           md:block" aria-hidden="true"></div>
+                                                       hidden bg-gradient-to-r
+                                                       from-[#FFF2F4]/90
+                                                       via-[#FFF2F4]/55
+                                                       to-transparent
+                                                       md:block" aria-hidden="true"></div>
 
 
         {{-- MOBILE BOTTOM GRADIENT --}}
         <div class="pointer-events-none absolute inset-0 -z-10
-                           bg-gradient-to-t
-                           from-[#FFF2F4]/95
-                           via-[#FFF2F4]/50
-                           to-transparent
-                           md:hidden" aria-hidden="true"></div>
+                                                       bg-gradient-to-t
+                                                       from-[#FFF2F4]/95
+                                                       via-[#FFF2F4]/50
+                                                       to-transparent
+                                                       md:hidden" aria-hidden="true"></div>
 
 
         {{-- HERO CONTENT CONTAINER --}}
         <div class="relative mx-auto flex
-                           min-h-[560px] w-full max-w-7xl
-                           items-end px-5 pb-12 pt-12
+                                                       min-h-[560px] w-full max-w-7xl
+                                                       items-end px-5 pb-12 pt-12
 
-                           min-[375px]:min-h-[610px]
-                           min-[375px]:pb-14
+                                                       min-[375px]:min-h-[610px]
+                                                       min-[375px]:pb-14
 
-                           sm:min-h-[680px]
-                           sm:px-8 sm:pb-16
+                                                       sm:min-h-[680px]
+                                                       sm:px-8 sm:pb-16
 
-                           md:min-h-[430px]
-                           md:items-center
-                           md:px-8 md:py-16
+                                                       md:min-h-[430px]
+                                                       md:items-center
+                                                       md:px-8 md:py-16
 
-                           lg:min-h-[540px]
-                           lg:px-10 lg:py-20
+                                                       lg:min-h-[540px]
+                                                       lg:px-10 lg:py-20
 
-                           xl:min-h-[620px]">
+                                                       xl:min-h-[620px]">
 
             {{-- TEXT OVERLAY --}}
             <div class="relative z-10
-                               w-full max-w-[580px]
-                               text-center md:text-left">
+                                                           w-full max-w-[580px]
+                                                           text-center md:text-left">
 
                 {{-- EYEBROW --}}
                 <div class="mb-5 flex items-center
-                                   justify-center gap-3
-                                   md:justify-start">
+                                                               justify-center gap-3
+                                                               md:justify-start">
 
                     <span class="h-px w-7 bg-brand"></span>
 
                     <p class="text-[10px] font-bold
-                                       uppercase tracking-[0.24em]
-                                       text-brand sm:text-xs">
+                                                                   uppercase tracking-[0.24em]
+                                                                   text-brand sm:text-xs">
                         GET IN TOUCH
                     </p>
 
@@ -109,27 +109,27 @@
 
                 {{-- MAIN HEADING --}}
                 <h1 id="contact-hero-heading" class="font-heading
-                                   text-[34px] font-bold
-                                   leading-[1.15]
-                                   tracking-tight text-[#171717]
+                                                               text-[34px] font-bold
+                                                               leading-[1.15]
+                                                               tracking-tight text-[#171717]
 
-                                   min-[375px]:text-[40px]
-                                   sm:text-[49px]
-                                   md:text-[44px]
-                                   lg:text-[58px]
-                                   xl:text-[66px]">
+                                                               min-[375px]:text-[40px]
+                                                               sm:text-[49px]
+                                                               md:text-[44px]
+                                                               lg:text-[58px]
+                                                               xl:text-[66px]">
                     Looking to Get
 
                     <span class="mt-1 block font-serif
-                                       text-[40px] font-normal
-                                       italic leading-[1.12]
-                                       text-brand
+                                                                   text-[40px] font-normal
+                                                                   italic leading-[1.12]
+                                                                   text-brand
 
-                                       min-[375px]:text-[47px]
-                                       sm:text-[59px]
-                                       md:text-[54px]
-                                       lg:text-[70px]
-                                       xl:text-[78px]">
+                                                                   min-[375px]:text-[47px]
+                                                                   sm:text-[59px]
+                                                                   md:text-[54px]
+                                                                   lg:text-[70px]
+                                                                   xl:text-[78px]">
                         Beautified?
                     </span>
 
@@ -138,13 +138,13 @@
 
                 {{-- DESCRIPTION --}}
                 <p class="mx-auto mt-5 max-w-[470px]
-                                   text-[13px] leading-7
-                                   text-slate-700
+                                                               text-[13px] leading-7
+                                                               text-slate-700
 
-                                   sm:mt-6 sm:text-base
-                                   sm:leading-8
+                                                               sm:mt-6 sm:text-base
+                                                               sm:leading-8
 
-                                   md:mx-0">
+                                                               md:mx-0">
                     Have a question about salon services,
                     academy courses or appointments?
                     Our team would love to hear from you.
@@ -351,6 +351,29 @@
     Fully Responsive: Mobile / Tablet / Desktop
     ========================================================= --}}
 
+
+    @php
+        $branch = [
+            'name' => 'KUTZZ Salon — Durg',
+
+            'address' => '1st Floor, Shanti Fitness Building, Station Road, opp. Gurudwara Road, above Domino\'s, New Deepak Nagar, Durg, Chhattisgarh 491001',
+
+            'map' => 'https://www.google.com/maps/search/?api=1&query=' .
+                rawurlencode('Kutzz The Salon & Academy, Station Road, Durg, Chhattisgarh'),
+        ];
+
+        // Google Maps iframe URL
+        $mapEmbedUrl = 'https://www.google.com/maps?' .
+            http_build_query([
+                'q' => 'Kutzz The Salon & Academy, Station Road, Durg, Chhattisgarh',
+                'z' => 17,
+                'output' => 'embed',
+            ]);
+
+        // Google Maps business listing URL
+        $directionsUrl = $branch['map'];
+    @endphp
+
     <section id="salon-location" class="bg-white px-4 py-16 sm:px-6 lg:py-20" aria-labelledby="location-heading">
 
         <div class="mx-auto max-w-7xl">
@@ -363,8 +386,10 @@
                 </p>
 
                 <h2 id="location-heading" class="mt-3 font-heading text-3xl font-bold text-slate-950 sm:text-4xl">
+
                     Visit Our
                     <span class="text-brand">Durg Branch</span>
+
                 </h2>
 
                 <p class="mt-4 text-sm leading-7 text-slate-600 sm:text-base">
@@ -374,35 +399,169 @@
 
             </div>
 
-
             {{-- MAP + LOCATION DETAILS --}}
             <div class="mt-10 grid overflow-hidden rounded-[1.5rem]
-                       border border-rose-100 bg-white shadow-lg
-                       lg:grid-cols-[minmax(0,1.65fr)_minmax(300px,1fr)]">
+                            border border-rose-100 bg-white shadow-lg
+                            lg:grid-cols-[minmax(0,1.65fr)_minmax(300px,1fr)]">
 
                 {{-- GOOGLE MAP EMBED --}}
                 <div class="relative h-[300px] min-w-0
-                           bg-slate-100
-                           sm:h-[400px]
-                           lg:h-[460px]">
+                                bg-slate-100
+                                sm:h-[400px]
+                                lg:h-[460px]">
 
-                    <iframe title="Google Maps — KUTZZ Salon Durg Branch"
-                        src="https://www.google.com/maps?q=1st%20Floor%2C%20Shanti%20Fitness%20Building%2C%20Station%20Road%2C%20New%20Deepak%20Nagar%2C%20Durg%2C%20Chhattisgarh%20491001&output=embed"
-                        width="100%" height="100%" style="border:0;" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade" allowfullscreen
-                        class="absolute inset-0 h-full w-full"></iframe>
+                    <iframe title="Google Maps — KUTZZ Salon Durg Branch" src="{{ $mapEmbedUrl }}" width="100%"
+                        height="100%" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen class="absolute inset-0 h-full w-full">
+                    </iframe>
 
                 </div>
 
-
                 {{-- ADDRESS INFORMATION --}}
                 <div class="flex min-w-0 flex-col justify-center
-                           bg-[#FFF7F8] p-6
-                           sm:p-8 lg:p-10">
+                                bg-[#FFF7F8] p-6
+                                sm:p-8 lg:p-10">
 
                     {{-- LOCATION ICON --}}
                     <div class="flex h-14 w-14 items-center justify-center
-                               rounded-2xl bg-[#FFE3E8] text-brand">
+                                    rounded-2xl bg-[#FFE3E8] text-brand">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+
+                            <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" />
+                            <circle cx="12" cy="10" r="2.5" />
+
+                        </svg>
+
+                    </div>
+
+                    {{-- BRANCH NAME --}}
+                    <h3 class="mt-6 font-heading text-2xl font-bold text-slate-950">
+                        {{ $branch['name'] }}
+                    </h3>
+
+                    <p class="mt-2 text-xs font-bold uppercase tracking-widest text-brand">
+                        Our Salon Location
+                    </p>
+
+                    {{-- ADDRESS --}}
+                    <address class="mt-5 text-sm not-italic leading-8 text-slate-600">
+
+                        1st Floor, Shanti Fitness Building,<br>
+                        Station Road, opp. Gurudwara Road,<br>
+                        above Domino’s, New Deepak Nagar,<br>
+                        Durg, Chhattisgarh — 491001
+
+                    </address>
+
+                    {{-- DIVIDER --}}
+                    <div class="my-6 h-px w-full bg-rose-200"></div>
+
+                    {{-- GOOGLE MAPS DIRECTIONS BUTTON --}}
+                    <a href="{{ $directionsUrl }}" target="_blank" rel="noopener noreferrer" class="mt-8 inline-flex min-h-12 w-full
+                                   items-center justify-center gap-2
+                                   rounded-xl bg-brand px-6 py-3
+                                   text-center text-sm font-bold text-white
+                                   transition duration-300 hover:bg-brand-dark">
+
+                        Get Directions
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+
+                            <path d="M7 17 17 7" />
+                            <path d="M7 7h10v10" />
+
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    @php
+        $branch = [
+            'name' => 'KUTZZ Salon — Bhilai',
+            'address' => '71/3, Nehru Nagar East, Vidya Vihar Colony, Bhilai, Nehru Nagar, Chhattisgarh 490020',
+            'latitude' => 21.2031966,
+            'longitude' => 81.3207425,
+
+            // Google Maps business listing search
+            'map' => 'https://www.google.com/maps/search/?api=1&query=' .
+                rawurlencode('Kutzz The Salon & Academy, 71/3, Nehru Nagar East, Bhilai, Chhattisgarh'),
+        ];
+
+        // Map coordinates
+        $coordinates = $branch['latitude'] . ',' . $branch['longitude'];
+
+        // Google Maps iframe
+        $mapEmbedUrl = 'https://maps.google.com/maps?' .
+            http_build_query([
+                'q' => 'RKutzz The Salon & Academy, Nehru Nagar East, Bhilai, Chhattisgarh',
+                'z' => 17,
+                'output' => 'embed',
+            ]);
+
+        // Business listing URL for Get Directions button
+        $directionsUrl = $branch['map'];
+    @endphp
+
+    <section id="salon-location" class="bg-white px-4 py-16 sm:px-6 lg:py-20" aria-labelledby="location-heading">
+        <div class="mx-auto max-w-7xl">
+
+            {{-- SECTION HEADING --}}
+            <div class="mx-auto max-w-2xl text-center">
+
+                <p class="text-xs font-bold uppercase tracking-[0.22em] text-brand">
+                    FIND OUR SALON
+                </p>
+
+                <h2 id="location-heading" class="mt-3 font-heading text-3xl font-bold text-slate-950 sm:text-4xl">
+                    Visit Our
+                    <span class="text-brand">Bhilai Branch</span>
+                </h2>
+
+                <p class="mt-4 text-sm leading-7 text-slate-600 sm:text-base">
+                    Your beauty destination is just a visit away.
+                    Find us easily using the map below.
+                </p>
+
+            </div>
+
+            {{-- MAP + LOCATION DETAILS --}}
+            <div class="mt-10 grid overflow-hidden rounded-[1.5rem]
+                               border border-rose-100 bg-white shadow-lg
+                               lg:grid-cols-[minmax(0,1.65fr)_minmax(300px,1fr)]">
+
+                {{-- GOOGLE MAP EMBED --}}
+                <div class="relative h-[300px] min-w-0 bg-slate-100
+                                   sm:h-[400px] lg:h-[460px]">
+
+                    <iframe title="Google Maps — KUTZZ Salon Bhilai Branch" src="{{ $mapEmbedUrl }}" width="100%"
+                        height="100%" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen class="absolute inset-0 h-full w-full"></iframe>
+
+                </div>
+
+                {{-- ADDRESS INFORMATION --}}
+                <div class="flex min-w-0 flex-col justify-center
+                                   bg-[#FFF7F8] p-6 sm:p-8 lg:p-10">
+
+                    {{-- LOCATION ICON --}}
+                    <div class="flex h-14 w-14 items-center justify-center
+                                       rounded-2xl bg-[#FFE3E8] text-brand">
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
@@ -413,41 +572,33 @@
 
                     </div>
 
-
                     {{-- BRANCH NAME --}}
                     <h3 class="mt-6 font-heading text-2xl font-bold text-slate-950">
-                        KUTZZ Salon — Durg
+                        {{ $branch['name'] }}
                     </h3>
 
                     <p class="mt-2 text-xs font-bold uppercase tracking-widest text-brand">
                         Our Salon Location
                     </p>
 
-
                     {{-- ADDRESS --}}
                     <address class="mt-5 text-sm not-italic leading-8 text-slate-600">
-                        1st Floor, Shanti Fitness Building,<br>
-                        Station Road, opp. Gurudwara Road,<br>
-                        above Domino’s, New Deepak Nagar,<br>
-                        Durg, Chhattisgarh — 491001
+                        71/3, Nehru Nagar East,<br>
+                        Vidya Vihar Colony, Bhilai,<br>
+                        Nehru Nagar,<br>
+                        Chhattisgarh — 490020
                     </address>
-
 
                     {{-- DIVIDER --}}
                     <div class="my-6 h-px w-full bg-rose-200"></div>
 
-
-                    
-                    
-
-
-                    {{-- GOOGLE MAPS DIRECTIONS BUTTON --}}
-                    <a href="https://www.google.com/maps/search/?api=1&amp;query=1st%20Floor%2C%20Shanti%20Fitness%20Building%2C%20Station%20Road%2C%20opp.%20Gurudwara%20Road%2C%20above%20Domino%27s%2C%20New%20Deepak%20Nagar%2C%20Durg%2C%20Chhattisgarh%20491001"
-                        target="_blank" rel="noopener noreferrer" class="mt-8 inline-flex min-h-12 w-full
-                               items-center justify-center gap-2
-                               rounded-xl bg-brand px-6 py-3
-                               text-center text-sm font-bold text-white
-                               transition duration-300 hover:bg-brand-dark">
+                    {{-- GOOGLE MAPS BUTTON --}}
+                    <a href="{{ $directionsUrl }}" target="_blank" rel="noopener noreferrer" class="mt-2 inline-flex min-h-12 w-full
+                                       items-center justify-center gap-2
+                                       rounded-xl bg-brand px-6 py-3
+                                       text-center text-sm font-bold text-white
+                                       transition duration-300
+                                       hover:bg-brand-dark">
                         Get Directions
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
@@ -464,8 +615,9 @@
             </div>
 
         </div>
-
     </section>
+
+
 
 
 @endsection
