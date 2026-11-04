@@ -176,6 +176,11 @@ class VideoController extends Controller
                 'boolean',
             ],
 
+            'is_celebrity' => [
+                'required',
+                'boolean',
+            ],
+
             'sort_order' => [
                 'required',
                 'integer',

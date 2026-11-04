@@ -13,11 +13,13 @@ class Video extends Model
         'video_id',
         'thumbnail',
         'is_active',
+        'is_celebrity',
         'sort_order',
     ];
 
     protected $casts = [
         'is_active' => 'boolean',
+        'is_celebrity' => 'boolean',
         'sort_order' => 'integer',
     ];
 

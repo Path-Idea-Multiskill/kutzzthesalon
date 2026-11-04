@@ -10,6 +10,8 @@
 
     @include('frontend.home.sections.statistics')
 
+    @include('frontend.home.sections.celebrity')
+
     @include('frontend.home.sections.services')
 
     @include('frontend.home.sections.videos')

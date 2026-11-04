@@ -8,12 +8,14 @@ use App\Models\GalleryImage;
 use App\Models\AcademyCourse;
 use App\Models\Blog;
 use App\Models\Branch;
+use App\Models\Video;
 use Illuminate\Support\Facades\Schema;
 
 class HomeController extends Controller
 {
     public function index()
     {
+        // SERVICES
         $servicesQuery = Service::query();
 
         if (Schema::hasColumn('services', 'is_active')) {
@@ -26,14 +28,18 @@ class HomeController extends Controller
 
         $services = $servicesQuery->latest('id')->get();
 
+        // GALLERY
         $galleryQuery = GalleryImage::query();
 
         if (Schema::hasColumn('gallery_images', 'is_active')) {
             $galleryQuery->where('is_active', true);
         }
 
-        $galleryImages = $galleryQuery->latest('id')->limit(12)->get();
+        $galleryImages = $galleryQuery->latest('id')
+            ->limit(12)
+            ->get();
 
+        // ACADEMY
         $coursesQuery = AcademyCourse::query();
 
         if (Schema::hasColumn('academy_courses', 'is_active')) {
@@ -44,8 +50,11 @@ class HomeController extends Controller
             $coursesQuery->orderByDesc('is_featured');
         }
 
-        $courses = $coursesQuery->latest('id')->limit(3)->get();
+        $courses = $coursesQuery->latest('id')
+            ->limit(3)
+            ->get();
 
+        // BLOGS
         $blogs = Blog::query()
             ->where('is_published', true)
             ->where(function ($query) {
@@ -56,6 +65,7 @@ class HomeController extends Controller
             ->limit(3)
             ->get();
 
+        // BRANCHES
         $branchesQuery = Branch::query();
 
         if (Schema::hasColumn('branches', 'is_active')) {
@@ -64,14 +74,26 @@ class HomeController extends Controller
             $branchesQuery->where('status', 'active');
         }
 
-        $branches = $branchesQuery->latest('id')->limit(3)->get();
+        $branches = $branchesQuery->latest('id')
+            ->limit(3)
+            ->get();
+
+        // CELEBRITY VIDEOS
+        // Only active videos marked Celebrity = Yes.
+        $celebrityVideos = Video::query()
+            ->where('is_active', true)
+            ->where('is_celebrity', true)
+            ->orderBy('sort_order', 'asc')
+            ->orderByDesc('id')
+            ->get();
 
         return view('frontend.home.index', compact(
             'services',
             'galleryImages',
             'courses',
             'blogs',
-            'branches'
+            'branches',
+            'celebrityVideos'
         ));
     }
 }

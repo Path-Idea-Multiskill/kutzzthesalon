@@ -163,6 +163,86 @@
             </div>
         </div>
 
+        {{-- CELEBRITY VIDEO SELECTION --}}
+<div class="rounded-2xl border border-rose-200 bg-rose-50/50 p-4 sm:p-5">
+
+    <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+
+        <div>
+            <label class="block text-sm font-bold text-slate-900">
+                Celebrity Video?
+            </label>
+
+            <p class="mt-1 text-xs leading-5 text-slate-500">
+                Select Yes if this video features a celebrity.
+            </p>
+        </div>
+
+        <div class="flex w-full items-center gap-2 sm:w-auto">
+
+            {{-- NO --}}
+            <label class="flex-1 cursor-pointer sm:flex-none">
+                <input
+                    type="radio"
+                    name="is_celebrity"
+                    value="0"
+                    class="peer sr-only"
+                    @checked((string) old('is_celebrity', (int) ($video->is_celebrity ?? 0)) === '0')
+                >
+
+                <span
+                    class="flex min-h-11 min-w-24 items-center justify-center
+                           rounded-xl border border-slate-200 bg-white
+                           px-5 py-2 text-sm font-semibold text-slate-600
+                           transition-all duration-200
+                           peer-checked:border-[#D60927]
+                           peer-checked:bg-[#D60927]
+                           peer-checked:text-white
+                           peer-focus-visible:ring-2
+                           peer-focus-visible:ring-[#D60927]
+                           peer-focus-visible:ring-offset-2"
+                >
+                    No
+                </span>
+            </label>
+
+            {{-- YES --}}
+            <label class="flex-1 cursor-pointer sm:flex-none">
+                <input
+                    type="radio"
+                    name="is_celebrity"
+                    value="1"
+                    class="peer sr-only"
+                    @checked((string) old('is_celebrity', (int) ($video->is_celebrity ?? 0)) === '1')
+                >
+
+                <span
+                    class="flex min-h-11 min-w-24 items-center justify-center
+                           rounded-xl border border-slate-200 bg-white
+                           px-5 py-2 text-sm font-semibold text-slate-600
+                           transition-all duration-200
+                           peer-checked:border-[#D60927]
+                           peer-checked:bg-[#D60927]
+                           peer-checked:text-white
+                           peer-focus-visible:ring-2
+                           peer-focus-visible:ring-[#D60927]
+                           peer-focus-visible:ring-offset-2"
+                >
+                    Yes
+                </span>
+            </label>
+
+        </div>
+    </div>
+
+    @error('is_celebrity')
+        <p class="mt-2 text-xs font-medium text-red-600">
+            {{ $message }}
+        </p>
+    @enderror
+
+</div>
+
         <div class="flex flex-col gap-3 border-t border-slate-100 pt-5 sm:flex-row">
             <button
                 type="submit"
